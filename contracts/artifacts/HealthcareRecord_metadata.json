@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HealthcareRecord.sol": "HealthcareRecord"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HealthcareRecord.sol": {
+			"keccak256": "0x48d62f7de78b0baeae7037a21ba83f3dffc5617fea33b38be5af5b72f00f756f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2e87b4776b945d419d696ba4fdbf9ce9dc0368cb42c3b5cde290ca3491e571c8",
+				"dweb:/ipfs/QmeaUFePR38JzC3V41K5jhpqpRz9WSnAXEtGXVQhYN8yES"
+			]
+		}
+	},
+	"version": 1
+}
