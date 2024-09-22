@@ -29,7 +29,18 @@ contract HealthcareRecord{
         owner = msg.sender;
     }
 
+
+
     function getOwner() public view returns (address){
         return owner;
+    }
+
+    function authorizeProvider(address provider) public onlyOwner{
+        authorizeProviders[provider] = true;
+    }
+
+    function addRecord(uint256 patientID, string memory patientName,string memory diagnosis, string memory treatment) public onlyAuthorizedProvider {
+        uint256 recordID = patientRecords[patientID].length + 1;
+        patientRecords[patientID].push(Record(recordID, patientName, diagnosis, treatment, block.timestamp));
     }
 }
