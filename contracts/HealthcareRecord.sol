@@ -43,4 +43,8 @@ contract HealthcareRecord{
         uint256 recordID = patientRecords[patientID].length + 1;
         patientRecords[patientID].push(Record(recordID, patientName, diagnosis, treatment, block.timestamp));
     }
+
+    function getPatientRecord(uint256 patientID) public view onlyAuthorizedProvider returns (Record[] memory){
+       return patientRecords[patientID]; 
+    }
 }
